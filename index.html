@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đánh giá sản phẩm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Đánh giá sản phẩm</h1>
+    <form id="review-form">
+        <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required><br>
+        <input type="text" id="datetime" name="datetime" value="" readonly><br>
+        <textarea id="comment" name="comment" placeholder="Nhập nhận xét của bạn" required></textarea><br>
+        <button type="submit" id="submit-btn">Gửi đánh giá</button>
+    </form>
+    <div id="review-container" class="review">
+        <h2>Đánh giá của người dùng:</h2>
+        <ul class="review-list">
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('datetime').value = new Date().toLocaleString();
+    document.getElementById('review-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var datetime = document.getElementById('datetime').value;
+        var comment = document.getElementById('comment').value;
+
+        var reviewItem = document.createElement('li');
+        reviewItem.classList.add('review-item');
+        reviewItem.innerHTML = "<strong>" + name + "</strong> - " + datetime + "<br>" + comment;
+
+        document.querySelector('.review-list').appendChild(reviewItem);
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+        reviewItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+</script>
+</body>
+</html>
+
+/*BAI2*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<title>Footer</title>
+</head>
+<body>
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-content">
+            <div class="left-content">
+                <h3>Đăng ký nhận tin</h3>
+                <form id="email-form">
+                    <input type="email2" id="email" name="email" placeholder="Nhập email của bạn" required>
+                  <button class="btn" type="submit">Đăng ký</button>
+              </form>
+            </div>
+            <div class="middle-content">
+                <h3>Thông tin liên hệ</h3>
+                <p>123 Đường ABC, Thành phố XYZ</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="right-content">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                </ul>
+            </div>
+          <div class="clock-content">
+                <h3>Giờ mở cửa</h3>
+                <p>Sáng: 7h30h-11h30h</p>
+                <p>Chiều: 13h-20h</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_IUH.png/640px-Logo_IUH.png"  class="footer-logo">
+        <p>&copy; 2024 Võ Hải Triều.</p>
+    </div>
+</footer>
+<script>
+    document.getElementById('email-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn chặn gửi biểu mẫu
+
+        var email = document.getElementById('email').value;
+        alert('Bạn đã đăng ký thành công với email: ' + email);
+    });
+</script>
+</body>
+</html>
+/*BAI3*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+
+<title>Đồng hồ</title>
+</head>
+<body>
+<div class="container3" id="container">
+    <div id="clock"></div>
+  </div>
+<script>
+    function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+        document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
+/*BAI4*/
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vhZlH+6dBU5WvN6g+U9DphkzP2WD8E/U6D0XTDmET2IpP9pV/Z3a0izK/DFl3dXSZaR1Q4EfRriL/v8AiV/gDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="overlay">
+        <form>
+            <div class="container-signin">
+                <header class="form-header">
+                    <h2>Login</h2>
+                    <p>Login using your username and password</p>
+                </header>
+                <br>
+                <div class="form-fields">
+                    <span class="input-icon">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input class="input-field" id="name2" type="text" placeholder="@Username" required>
+                    <br>
+                    <span class="input-icon">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="input-field" type="password" placeholder="Password" id="pd" name="password" required>
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true" type="button" id="show-password"></i>
+                    </span>
+                    <br>
+                    <button class="login-btn">Log In</button>
+                </div>
+                <div class="additional-actions">
+                    <button class="btn forgot-pass">Forgot Password</button>
+                    <button class="btn sign-up">Sign Up 
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <p id="login-status"></p> <!-- Phần tử này sẽ hiển thị thông báo đăng nhập -->
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-btn").addEventListener("click", function(event) {
+            event.preventDefault(); // Ngăn chặn gửi biểu mẫu
+
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("pd").value;
+
+            if (username === "admin" && password === "admin") {
+                document.getElementById("login-status").textContent = "Đăng nhập thành công!";
+        
+            } else {
+                document.getElementById("login-status").textContent = "Tên người dùng hoặc mật khẩu không chính xác!";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+/*BAI1*/
+    
+.container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: pink;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        text-align: center;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    #submit-btn {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #submit-btn:hover {
+        background-color: #45a049;
+    }
+    .review {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+    .review-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .review-item {
+        margin-bottom: 20px;
+    }
+/*BAI2*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+    .container2 {
+        width: 80%;
+        margin-left: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Các cột sẽ được căn trên cùng */
+    }
+    .left-column {
+        flex: 1;
+    }
+    .right-column {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Các cột sẽ được căn trên cùng */
+    }
+    input[type="email2"] {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    input[type="submit2"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit2"]:hover {
+        background-color: #45a049;
+        margin-top: 15px;
+    }
+    .column {
+        color: #fff;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        margin-bottom: 5px;
+    } 
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content,
+.middle-content,
+ {
+    flex-basis: 30%;
+}
+.left-content{
+  margin-right:150px;
+}
+
+.left-content h3,
+.middle-content h3,
+.right-content h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.left-content p,
+.middle-content ul,
+.right-content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.middle-content,
+.right-content {
+    margin-bottom: 5px;
+    margin-left: 50px;
+   
+}
+.right-content{
+  margin-left:100px;
+  margin-right:100px;
+}
+
+.middle-content a,
+.right-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bottom-footer {
+    background-color: #222222;
+    padding: 10px 0;
+    text-align: center;}
+.footer-logo{
+    width: 100px; /* Đặt chiều rộng của logo */
+    height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ */
+    margin-right: 10px;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px; 
+    margin-top: 15px;
+    
+}
+.left-content input[type="email2"] {
+    width: 100%; /* Đặt độ rộng là 100% để ô nhập email trải dài hết phần bên trái */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/*BAI3*/
+.container3 {
+    font-family: Arial, sans-serif;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg'); /* Thay đổi đường dẫn và tên tệp hình ảnh */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#clock {
+    font-size: 7em;
+    color: #333333;
+}
+
+/*BAI4*/
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); 
+}
+
+.container-signin {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: #888;
+}
+
+.form-fields {
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #888;
+}
+
+.input-field {
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.additional-actions {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.forgot-pass {
+    background-color: none;
+}
+
+.btn.sign-up {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn.sign-up:hover {
+    background-color: #0056b3;
+}
+.login-btn {
+   width: 100%;
+  padding: 10px;
+  background-color: white;
+  
+}
+
